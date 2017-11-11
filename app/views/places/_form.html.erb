@@ -1,0 +1,15 @@
+<%= form_for @place do |f| %>
+	<fieldset class="form-group">
+	  <%= f.label :title, 'Título' %>
+		<%= f.text_field :title, class: "form-control" %>
+	</fieldset>
+	<fieldset class="form-group">
+	<%= f.label :visited_by, 'Visitado por' %>
+		<%= f.text_field :visited_by, class: "form-control" %>
+	</fieldset>
+	<fieldset class="form-group">
+		<%= f.label :address, 'Dirección' %>
+		<%= f.text_field :address, class: "form-control" %>
+	</fieldset>
+	<%= f.submit 'Crear', class: 'btn btn-prymary' %>
+<% end %>
